@@ -1,0 +1,21 @@
+#build artifacts
+__pycache__/
+dist/
+build/
+*.egg-info/
+*.py[codz]
+*$py.class
+
+#text files apart fron licence
+*.txt
+!licence-gpl-3.txt
+!requirements.txt
+
+#virtual envs
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/

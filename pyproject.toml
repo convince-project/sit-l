@@ -1,0 +1,44 @@
+#SIT-AW  Copyright (C) CEA 2025  Razane Azrou
+[project]
+name = "convincesitl_mllm"
+version = "0.1.0"
+requires-python = "==3.10.*"
+description = "MLLM pipeline for anomaly handling for enhacing robotic systems' autonomy in the context of situation learning"
+readme = {file = "README.md", content-type = "text/markdown"}
+authors = [
+    {name = "Razane Azrou", email = "razane.azrou@cea.fr"},
+    {name = "Vaiyee Huynh", email = "vaiyee.huynh@cea.fr"},
+    {name = "Nathan Damette", email = "nathan.damette@cea.fr"}
+]
+keywords = [
+    "robotics",
+    "ai",
+    "awareness",
+    "situation",
+    "learning",
+    "vision-language-models",
+    "multimodal",
+    "anomaly",
+    "identification",
+]
+
+dependencies = [
+  "tyro >= 0.9.19",
+  "convincesitaw_mllm"
+]
+
+[tool.uv.sources]
+convincesitaw_mllm = {git = "ssh://git@gitlab.lri.cea.fr/razane.azrou/convincesitaw_mllm.git"}
+
+[project.scripts]
+learn = "convincesitl_mllm.learning:cli"
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["convincesitl_mllm"]
