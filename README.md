@@ -8,4 +8,4 @@ learning procedure.
 In the near future [WP3 active/simulate plan](https://github.com/convince-project/active-simulate-plan)
 will be added to affine the learning. 
 
-Refer to [sit-aw-api](convince-project.github.io/sit-l/) documentation to learn how to get started and use it.
+Refer to [sit-l](convince-project.github.io/sit-l/) documentation to learn how to get started and use it.
