@@ -1,7 +1,7 @@
 Deploy model (if needed)
 ========================
 
-Refer to `situation awareness VLM deployment <https://convince-project.github.io/sit-aw-aip/deploy_model.html>` 
+Refer to `situation awareness VLM deployment`_ 
 section. 
 
 Installations
@@ -32,7 +32,7 @@ Activate virtual env - everytime you enter the project
 Format data (if needed)
 =======================
 
-Refer to `situation awareness Format data <https://convince-project.github.io/sit-aw-aip/identification.html#format-data-generate-json-once-on-a-desired-batch-of-data>` 
+Refer to `situation awareness Format data`_ 
 section. It is the same command, as call it from there. 
 
 Learning (inference)
@@ -46,5 +46,9 @@ Learning (inference)
     --use_case_id {id} \
     --anomaly_case_path {path} 
 
-Refer to `situation awareness variables description <https://convince-project.github.io/sit-aw-aip/identification.html#id4>`
+Refer to `situation awareness variables description`_
 within the identification part. They represent the same. 
+
+.. _situation awareness VLM deployment: <https://convince-project.github.io/sit-aw-aip/deploy_model.html>
+.. _situation awareness Format data: <https://convince-project.github.io/sit-aw-aip/identification.html#format-data-generate-json-once-on-a-desired-batch-of-data>
+.. _ situation awareness variables description: <https://convince-project.github.io/sit-aw-aip/identification.html#id4>
