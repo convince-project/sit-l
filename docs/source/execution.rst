@@ -28,6 +28,20 @@ Activate virtual env - everytime you enter the project
 
     source .venv/bin/activate
 
+Change environment variables
+""""""""""""""""""""""""""""
+
+You will have to change the variables within *.env* to match the one defined when deploying
+the model.
+
+**SERVER_IP** need to be the address of the serving hosting the model, else it will consider 
+localhost by default. 
+
+**Model** is the model you have chosen to deploy.
+
+**PORT** is the port exposed by docker that you defined when deploying.
+
+Same procedure as in situation awareness package.
 
 Format data (if needed)
 =======================
