@@ -51,4 +51,4 @@ within the identification part. They represent the same.
 
 .. _situation awareness VLM deployment: <https://convince-project.github.io/sit-aw-aip/deploy_model.html>
 .. _situation awareness Format data: <https://convince-project.github.io/sit-aw-aip/identification.html#format-data-generate-json-once-on-a-desired-batch-of-data>
-.. _ situation awareness variables description: <https://convince-project.github.io/sit-aw-aip/identification.html#id4>
+.. _situation awareness variables description: <https://convince-project.github.io/sit-aw-aip/identification.html#id4>
