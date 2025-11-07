@@ -12,7 +12,6 @@ build/
 !requirements.txt
 
 #virtual envs
-.env
 .venv
 env/
 venv/
