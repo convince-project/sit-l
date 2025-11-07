@@ -28,7 +28,7 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-convincesitaw_mllm = {git = "ssh://git@gitlab.lri.cea.fr/razane.azrou/convincesitaw_mllm.git"}
+convincesitaw_mllm = {git = "https://github.com/convince-project/sit-aw-aip.git"}
 
 [project.scripts]
 learn = "convincesitl_mllm.learning:cli"

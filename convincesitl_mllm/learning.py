@@ -45,7 +45,7 @@ def update_sys_prompt_file(anomaly_description:str,use_case_id:int):
         raise ValueError("Nothing list found in system prompt")
     last_num = int(last_defined_class[0])
 
-    new_class = f"\n{last_num+1}. {anomaly_description}\n"
+    new_class = f"\n{last_num+1}. {anomaly_description}\n\n"
 
     new_section = section.rstrip() + new_class
 
@@ -61,10 +61,11 @@ def main(use_case_id:int,anomaly_case_path:str):
     ## need to add the fact that it is launch if unkown
     sys_prompt = map.sys_prompts[use_case_id]
     messages,inference,reply= send_identification_request_to_VLM.main(use_case_id,anomaly_case_path,sys_prompt)
-    if 'unknown' or 'Unknown' in reply: #will this is something to be changed in the future
+    if 'unknown' or 'Unknown' in reply: #this is something to be changed in the future to avoid relying on str
         anomaly_description = new_anomaly_description(messages,inference)
+        print(f'new anomaly description : {anomaly_description}')
         update_sys_prompt_file(anomaly_description,use_case_id)
 
 
 def cli():
-    tyro(main)
+    tyro.cli(main)

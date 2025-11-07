@@ -1,4 +1,4 @@
-from prompts import sys_prompts_UC1,sys_prompts_UC2,sys_prompts_UC3
+from . import sys_prompts_UC1,sys_prompts_UC2,sys_prompts_UC3
 
 sys_prompts = {
     1: sys_prompts_UC1.SYSTEM_PROMPT,
