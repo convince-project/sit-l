@@ -1,15 +1,22 @@
 CONVINCE SIT-L, a software pipeline for robot situation learning
 ================================================================
 
-SIT-L is a software pipeline for robot situation learning, part of the `CONVINCE toolchain <https://convince-project.github.io/overview/>`_. It implements techniques for the acquisition (learning) of new episodic and semantic memory from encountered unexpected situations that were not foreseen at design time (unknown anomalies). It closes the loop of robot situation awareness and increased robot autonomy.
+SIT-L is a software pipeline for robot situation learning, part of the `CONVINCE toolchain <https://convince-project.github.io/overview/>`_. 
+It implements a pipeline for learning new situations. Those situations are unexpected failures that may happen at design time. 
+This procedure is directly related to `situation awareness <https://github.com/convince-project/sit-aw-aip>`, by tackling 
+the detection, identification and mitigation of unknwon anomalies.
 
-.. note::
 
-   Description of general principes is coming soon.
+The module encapsulates situation awareness for detection and identification, added to it a 
+learning procedure.
+In the near future `WP3 active/simulate plan <https://github.com/convince-project/active-simulate-plan>`
+will be added to affine the learning. 
 
-The SIT-L pipeline is made up of several modules. Below there is a list of the modules available in the current release of SIT-L. Each module is provided with documentation that contains a tutorial demonstrating its functionality.
+Contents
+--------
 
-An overall tutorial on how to run the full pipeline on a coherent example will be added at a later stage of CONVINCE.
+.. toctree::
 
-To be added
-------------------------------------------
+   generic_principles
+   execution
+
