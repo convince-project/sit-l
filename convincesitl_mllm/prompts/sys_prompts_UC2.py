@@ -43,8 +43,9 @@ For your analysis, would you like to simply fill this JSON structure with realis
             "at_the_end": {
                 "mean_position": number,
                 "is_gripper_zero": true or false,
-            },
-        },
+            }
+        }
+    },
     "task": {
         "performed_task": "pick block", "move mobile base" or "place block",
     },
