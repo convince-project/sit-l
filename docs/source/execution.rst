@@ -1,8 +1,7 @@
-Deploy model (if needed)
-========================
+Deploy model (if needed) or use the local version
+=================================================
 
-Refer to `situation awareness VLM deployment`_ 
-section. 
+Refer to `situation awareness`_ VLM deployment section, if you want to deploy a model.
 
 Installations
 =============
@@ -28,14 +27,12 @@ Activate virtual env - everytime you enter the project
 
     source .venv/bin/activate
 
-Change environment variables
-----------------------------
+Change environment variables (if you use a hosted model on a server)
+--------------------------------------------------------------------
 
-You will have to change the variables within *.env* to match the one defined when deploying
-the model.
+You will have to change the variables within *.env* to match the one defined when deploying the model.
 
-**SERVER_IP** need to be the address of the serving hosting the model, else it will consider 
-localhost by default. 
+**SERVER_IP** need to be the address of the serving hosting the model, else it will consider localhost by default. 
 
 **Model** is the model you have chosen to deploy.
 
@@ -46,23 +43,20 @@ Same procedure as in situation awareness package.
 Format data (if needed)
 =======================
 
-Refer to `situation awareness Format data`_ 
-section. It is the same command, as call it from there. 
+Refer to `situation awareness`_  Format data section. You can use the same command from this package than from the situation awareness package. 
 
 Learning (inference)
 ====================
 
-⚠ **The model will "learn" only if the identified anomaly is unknwon**
+⚠ **The model will "learn" only if the identified anomaly is unknown**
 
 .. code-block:: bash
 
     learn \
     --use_case_id {id} \
-    --anomaly_case_path {path} 
+    --anomaly_case_path {path} \
+    --local_model (optinal - default=False)
 
-Refer to `situation awareness variables description`_
-within the identification part. They represent the same. 
+Refer to `situation awareness`_ variables description within the identification part. They represent the same. Apart from *local_model* variable : if you want the quantized local model, define this value as True.
 
-.. _situation awareness VLM deployment: <https://convince-project.github.io/sit-aw-aip/deploy_model.html>
-.. _situation awareness Format data: <https://convince-project.github.io/sit-aw-aip/identification.html#format-data-generate-json-once-on-a-desired-batch-of-data>
-.. _situation awareness variables description: <https://convince-project.github.io/sit-aw-aip/identification.html#id4>
+.. _situation awareness : https://github.com/convince-project/sit-aw-aip
