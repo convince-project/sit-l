@@ -75,7 +75,7 @@ def main(use_case_id:int,anomaly_case_path:str,local_model:bool=False):
     else:
         messages,inference,reply= inference_with_hosted_VLM.main(use_case_id,anomaly_case_path,sys_prompt)
 
-    if 'unknown' or 'Unknown' in reply: #this is something to be changed in the future to avoid relying on str
+    if 'Unknown' in reply: #this is something to be changed in the future to avoid relying on str
         anomaly_description = new_anomaly_description(messages,inference,local_model=local_model,model=model,processor=processor)
         print(f'new anomaly description : {anomaly_description}')
         update_sys_prompt_file(anomaly_description,use_case_id)

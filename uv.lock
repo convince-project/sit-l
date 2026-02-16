@@ -251,7 +251,7 @@ wheels = [
 [[package]]
 name = "convincesitaw-mllm"
 version = "0.1.0"
-source = { git = "https://github.com/convince-project/sit-aw-aip.git#dfd0d6152002fa222ea38ae5c058045a5c4833e3" }
+source = { git = "https://github.com/convince-project/sit-aw-aip.git#f87c1108d7463f068f41f95eb17379241a127030" }
 dependencies = [
     { name = "abcplus" },
     { name = "accelerate" },
