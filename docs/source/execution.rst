@@ -60,3 +60,10 @@ Learning (inference)
 Refer to `situation awareness`_ variables description within the identification part. They represent the same. Apart from *local_model* variable : if you want the quantized local model, define this value as True.
 
 .. _situation awareness : https://github.com/convince-project/sit-aw-aip
+
+Customize to your use case 
+==========================
+
+1. Add your prompts to **convincesitl_mllm/prompts**, following the convention **prompt_UC{id}**. The id being the value that will point to your use case when executing the inference and data formatting.
+
+2. Add your id and related values to the mapping, in the script **convincesitl_mllm/prompts/prompt_mapping.py**.
