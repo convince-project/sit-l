@@ -43,7 +43,7 @@ Same procedure as in situation awareness package.
 Format data (if needed)
 =======================
 
-Refer to `situation awareness`_  Format data section. You can use the same command from this package than from the situation awareness package. 
+Refer to `situation awareness`_  Format data section. You can use the same command from this package as from the situation awareness package. 
 
 Learning (inference)
 ====================
@@ -55,7 +55,7 @@ Learning (inference)
     learn \
     --use_case_id {id} \
     --anomaly_case_path {path} \
-    --local_model (optinal - default=False)
+    --local_model (optional - default=False)
 
 Refer to `situation awareness`_ variables description within the identification part. They represent the same. Apart from *local_model* variable : if you want the quantized local model, define this value as True.
 
